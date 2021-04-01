@@ -17,4 +17,6 @@ char period_loc[] = "/sys/class/pwm/pwm-7:1/period";                    // perio
 char enable_loc[] = "/sys/class/pwm/pwm-7:1/enable";                    // enable file location
 
 //function definiations 
-
+int init_motor(void);
+int file_write(char file_name[], int value);
+void delay_ms(int ms);
